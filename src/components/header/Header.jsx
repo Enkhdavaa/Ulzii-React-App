@@ -1,4 +1,8 @@
+import './Header.css'
+
 export default function Header()
 {
-    return <> Header </>
+    return <div className="header"> 
+        ULZII ASSOCIATION
+    </div>
 }
