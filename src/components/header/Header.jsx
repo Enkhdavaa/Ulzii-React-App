@@ -3,6 +3,6 @@ import './Header.css'
 export default function Header()
 {
     return <div className="header"> 
-        ULZII ASSOCIATION
+        WELCOME TO ULZII ASSOCIATION WEBSITE
     </div>
 }

@@ -1,4 +1,8 @@
+import './Footer.css'
+
 export default function Footer()
 {
-    return <> Footer </>
+    return <div className='footer'> 
+        Ulzii logo
+    </div>
 }
