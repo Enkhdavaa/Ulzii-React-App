@@ -1,10 +1,12 @@
-import { Canvas } from '@react-three/fiber';
+import { Center, Text, OrbitControls } from '@react-three/drei'
 
 export default function Experience()
 {
-    return <div>
-        <Canvas>
-            
-        </Canvas>
-    </div>
+    return <>
+        <OrbitControls makeDefault/>
+        <Center />
+        <Text>
+            COMING SOON
+        </Text>
+    </>
 }

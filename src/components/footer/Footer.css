@@ -1,12 +1,14 @@
 .footer
 {
+    position: fixed;
+    bottom: 0;
     text-align: center;
     font-size: 2rem;
     justify-content: center;
-    display: flex;
 }
 
 .logo
 {
     width: 40%;
+    bottom: 0;
 }
