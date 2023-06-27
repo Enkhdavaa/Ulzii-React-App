@@ -1,4 +1,6 @@
-import { Float, Center, Text, OrbitControls } from '@react-three/drei'
+import { Sparkles, Float, Text, OrbitControls } from '@react-three/drei'
+import { EffectComposer } from '@react-three/postprocessing'
+import * as THREE from 'three'
 
 export default function Experience()
 {
@@ -17,8 +19,16 @@ export default function Experience()
                 position={ [ 0, 0.5, 0 ] }
             >
                 COMING SOON!
-                <meshBasicMaterial color="black" toneMapped={ false } />
+                <meshStandardMaterial color="blue" side={ THREE.DoubleSide }/>
             </Text>
         </Float>
+        <Sparkles 
+            size={ 6 }
+            scale={ [ 4, 3, 3 ] }
+            position-y={ 0.5 }
+            speed={ 0.5 }
+            count={ 100 }
+            color="black"
+        />
     </>
 }
