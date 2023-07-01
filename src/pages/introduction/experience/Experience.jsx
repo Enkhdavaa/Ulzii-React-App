@@ -1,5 +1,4 @@
 import { Sparkles, Float, Text, OrbitControls } from '@react-three/drei'
-import { EffectComposer } from '@react-three/postprocessing'
 import * as THREE from 'three'
 
 export default function Experience()
@@ -24,10 +23,10 @@ export default function Experience()
         </Float>
         <Sparkles 
             size={ 6 }
-            scale={ [ 4, 3, 3 ] }
+            scale={ [ 25, 10, 15 ] }
             position-y={ 0.5 }
             speed={ 0.5 }
-            count={ 100 }
+            count={ 200 }
             color="black"
         />
     </>
