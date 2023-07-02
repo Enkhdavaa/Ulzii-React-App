@@ -16,9 +16,9 @@ export default function Experience()
                 lineHeight={ 0.75 }
                 textAlign='center'
                 position={ [ 0, 0.5, 0 ] }
+                color="green"
             >
                 COMING SOON!
-                <meshStandardMaterial color="blue" side={ THREE.DoubleSide }/>
             </Text>
         </Float>
         <Sparkles 
@@ -27,7 +27,7 @@ export default function Experience()
             position-y={ 0.5 }
             speed={ 0.5 }
             count={ 200 }
-            color="black"
+            color="green"
         />
     </>
 }
