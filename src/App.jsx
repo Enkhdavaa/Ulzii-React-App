@@ -9,7 +9,7 @@ export default function App()
         <div className='h-[100px]'>
             <Header />
         </div>
-        <div className='flex-auto bg-slate-400'>
+        <div>
             <Navbar />
         </div>
         <div className='flex-grow'>
