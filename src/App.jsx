@@ -6,7 +6,7 @@ import Navbar from './components/navbar/Navbar.jsx'
 export default function App()
 {
     return <div className='flex flex-col h-screen'>
-        <div className='h-[100px]'>
+        <div className='h-min[100px]'>
             <Header />
         </div>
         <div>
@@ -15,7 +15,7 @@ export default function App()
         <div className='flex-grow'>
             <Routing />
         </div>
-        <div className='h-[100px]'>
+        <div className='h-min-[100px]'>
             <Footer />
         </div>
     </div>
