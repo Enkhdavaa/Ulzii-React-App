@@ -1,4 +1,4 @@
-import { SparklesIcon, PhoneIcon } from '@heroicons/react/24/solid'
+import { SparklesIcon, PhoneIcon, CalendarIcon } from '@heroicons/react/24/solid'
 
 export default function Navbar()
 {
@@ -15,6 +15,12 @@ export default function Navbar()
                     <a href="/contact" className="flex items-center">
                         <PhoneIcon className="w-6 h-6 mr-2"/>
                         <span>Contact</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="/events" className="flex items-center">
+                        <CalendarIcon className="w-6 h-6 mr-2"/>
+                        <span>Upcoming events</span>
                     </a>
                 </div>
             </div>
