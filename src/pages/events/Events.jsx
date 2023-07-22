@@ -28,10 +28,10 @@ export default function Events()
         setEvents([
             {
                 id: 1,
-                startAt: '2023-07-21T10:00:00.000Z',
-                endAt: '2023-07-21T12:00:00.000Z',
+                startAt: '2023-07-25T12:00:00.000Z',
+                endAt: '2023-07-25T13:00:00.000Z',
                 timezoneStartAt: 'Europe/Berlin', // optional
-                summary: 'test1',
+                summary: 'Meeting to discuss over website',
                 color: 'blue',
                 calendarID: 'work'
             },
