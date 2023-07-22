@@ -1,7 +1,8 @@
-import Kalend from "kalend"
-import { CalendarView } from "kalend"
+import Kalend from 'kalend'
+import { CalendarView } from 'kalend'
 import 'kalend/dist/styles/index.css'
-import { useState, useEffect } from "react"
+import moment from 'moment'
+import { useState, useEffect } from 'react'
 
 export default function Events()
 {
@@ -35,7 +36,7 @@ export default function Events()
             // onEventClick={onEventClick}
             // onNewEventClick={onNewEventClick}
             events={events}
-            initialDate={new Date().toISOString()}
+            // initialDate={'2023-07-22T22:16:55.262Z'}
             hourHeight={60}
             initialView={CalendarView.AGENDA}
             disabledViews={[CalendarView.DAY, CalendarView.THREE_DAYS, CalendarView.WEEK, CalendarView.MONTH]}
