@@ -1,6 +1,67 @@
+import Kalend from "kalend"
+import { CalendarView } from "kalend"
+import 'kalend/dist/styles/index.css'
+import { useState, useEffect } from "react"
+
+const onEventClick = () => {
+    console.log('onEventClick')
+}
+const onNewEventClick = () => {
+    console.log('onNewEventClick')
+}
+const onSelectView = () => {
+    console.log('onSelectView')
+}
+const selectedView = () => {
+    console.log('selectedView')
+}
+const onPageChange = () => {
+    console.log('onPageChange')
+}
+
 export default function Events()
 {
+    const [events, setEvents] = useState([])
+
+    useEffect(() => 
+    {
+        setEvents([
+            {
+                id: 1,
+                startAt: '2023-07-21T10:00:00.000Z',
+                endAt: '2023-07-21T12:00:00.000Z',
+                timezoneStartAt: 'Europe/Berlin', // optional
+                summary: 'test1',
+                color: 'blue',
+                calendarID: 'work'
+            },
+            {
+                id: 2,
+                startAt: '2023-07-21T18:00:00.000Z',
+                endAt: '2023-07-21T19:00:00.000Z',
+                timezoneStartAt: 'Europe/Berlin', // optional
+                summary: 'test2',
+                color: 'blue'
+            }
+        ])    
+    }, [])
+
     return <div>
-        UPCOMING EVENTS
+        <Kalend 
+            // onEventClick={onEventClick}
+            // onNewEventClick={onNewEventClick}
+            events={events}
+            initialDate={new Date().toISOString()}
+            hourHeight={60}
+            initialView={CalendarView.AGENDA}
+            disabledViews={[CalendarView.DAY, CalendarView.THREE_DAYS]}
+            // onSelectView={onSelectView}
+            // selectedView={selectedView}
+            // onPageChange={onPageChange}
+            timeFormat={'24'}
+            weekDayStart={'Monday'}
+            calendarIDsHidden={['work']}
+            language={'en'}
+        />
     </div>
 }
