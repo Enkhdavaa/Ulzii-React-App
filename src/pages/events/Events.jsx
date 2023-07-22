@@ -3,22 +3,6 @@ import { CalendarView } from "kalend"
 import 'kalend/dist/styles/index.css'
 import { useState, useEffect } from "react"
 
-const onEventClick = () => {
-    console.log('onEventClick')
-}
-const onNewEventClick = () => {
-    console.log('onNewEventClick')
-}
-const onSelectView = () => {
-    console.log('onSelectView')
-}
-const selectedView = () => {
-    console.log('selectedView')
-}
-const onPageChange = () => {
-    console.log('onPageChange')
-}
-
 export default function Events()
 {
     const [events, setEvents] = useState([])
@@ -54,7 +38,7 @@ export default function Events()
             initialDate={new Date().toISOString()}
             hourHeight={60}
             initialView={CalendarView.AGENDA}
-            disabledViews={[CalendarView.DAY, CalendarView.THREE_DAYS]}
+            disabledViews={[CalendarView.DAY, CalendarView.THREE_DAYS, CalendarView.WEEK, CalendarView.MONTH]}
             // onSelectView={onSelectView}
             // selectedView={selectedView}
             // onPageChange={onPageChange}
